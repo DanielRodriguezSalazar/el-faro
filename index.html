@@ -5,127 +5,169 @@
     <meta charset="utf-8">
     <title>El Faro - Noticias de Chile y el Mundo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ESTILO PARA CENTRAR EL DIARIO */
+        body {
+            background-color: #e9e9e9; /* Fondo gris para resaltar el papel blanco */
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* El contenedor principal que limita el ancho */
+        .contenedor {
+            max-width: 1000px; 
+            margin: 20px auto; /* Centra el contenido y da espacio arriba/abajo */
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2); /* Sombra para efecto de papel */
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            background-color: #333;
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1976d2;
+        }
+
+        table {
+            margin-bottom: 30px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            border-bottom: 3px solid #333;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <header id="inicio" style="text-align: center;">
-        <img src="logo.jpg" alt="Logotipo El Faro" style="width: 100%; height: auto; display: block;"> 
-        
-        <nav style="background-color: #333; padding: 10px;">
-            <ul style="list-style: none; display: flex; justify-content: space-around; padding: 0;">
-                <li><h2><a href="#inicio" style="color: white; text-decoration: none;">Inicio</a></h2></li>
-                <li><h2><a href="#noticias" style="color: white; text-decoration: none;">Noticias</a></h2></li>
-                <li><h2><a href="#deportes" style="color: white; text-decoration: none;">Deporte</a></h2></li>
-                <li><h2><a href="#negocios" style="color: white; text-decoration: none;">Negocios</a></h2></li>
-            </ul>
-        </nav>
-    </header>
 
-    <br />
+    <div class="contenedor">
+        <header id="inicio">
+            <img src="logo.jpg" alt="Logotipo El Faro"> 
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#deportes">Deporte</a></li>
+                    <li><a href="#negocios">Negocios</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="noticias">
-        <h1>Noticias Generales</h1>
-        <table border="5" width="100%">
-            <tbody>
+        <br>
+
+        <section id="noticias">
+            <h1>Noticias Generales</h1>
+            <table width="100%">
                 <tr>
                     <td width="33%" valign="top">
-                        <h2>Conmoción por ataque en colegio de Calama</h2>
-                        <span>Nacional / Sociedad</span>
-                        <p>Grave incidente en el Instituto Silva Lezaeta dejó una funcionaria fallecida. La comunidad escolar exige justicia tras el violento ataque.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/75KzHYK1gwE" frameborder="0" allowfullscreen></iframe>
+                        <h3>Ataque en colegio de Calama</h3>
+                        <p>Grave incidente en el Instituto Silva Lezaeta dejó una funcionaria fallecida.</p>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/75KzHYK1gwE" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>Trump declara destrucción militar de Irán</h2>
-                        <span>Internacional / Política</span>
-                        <p>El mandatario asegura que la capacidad operativa de Irán ha sido neutralizada tras 32 días de la operación "Epic Fury".</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/7AXWfs3g5Aw" frameborder="0" allowfullscreen></iframe>
+                        <h3>Trump e Irán</h3>
+                        <p>El mandatario asegura que la capacidad operativa de Irán ha sido neutralizada.</p>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/7AXWfs3g5Aw" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>Alerta por "Cera": El fentanilo chileno</h2>
-                        <span>Reportajes / Salud</span>
-                        <p>Reportaje revela el avance de esta peligrosa droga sintética altamente adictiva en los barrios más vulnerables del país.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/NwpmF6N3EUs" frameborder="0" allowfullscreen></iframe>
+                        <h3>Alerta por "Cera"</h3>
+                        <p>Reportaje revela el avance de esta peligrosa droga sintética en Chile.</p>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/NwpmF6N3EUs" frameborder="0" allowfullscreen></iframe>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-    </section>
+            </table>
+        </section>
 
-    <br />
-
-    <section id="deportes">
-        <h1>Deportes</h1>
-        <table border="5" width="100%">
-            <tbody>
+        <section id="deportes">
+            <h1>Deportes</h1>
+            <table width="100%">
                 <tr>
                     <td width="33%" valign="top">
-                        <h2>"Narcofútbol": Fachada para el tráfico</h2>
-                        <p>Una investigación desbarató al club deportivo cuya directiva utilizaba los viajes para transportar estupefacientes.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/bc-O49DxjWY" frameborder="0" allowfullscreen></iframe>
+                        <h3>Narcofútbol</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/bc-O49DxjWY" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>Cóndores clasifican al Mundial 2027</h2>
-                        <p>Hito histórico para el rugby nacional tras vencer a Samoa por 31-12 en un Estadio Sausalito totalmente repleto.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/XI75TUHM8Nc" frameborder="0" allowfullscreen></iframe>
+                        <h3>Cóndores al Mundial</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/XI75TUHM8Nc" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>Reforma a Sociedades Deportivas</h2>
-                        <p>El Congreso despachó la ley que busca transparentar la propiedad de los clubes y poner fin a la multipropiedad en el fútbol.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/ILlZl-VBxQY" frameborder="0" allowfullscreen></iframe>
+                        <h3>Reforma S.A. Deportivas</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/ILlZl-VBxQY" frameborder="0" allowfullscreen></iframe>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-    </section>
+            </table>
+        </section>
 
-    <br />
-
-    <section id="negocios">
-        <h1>Negocios y Emprendimientos</h1>
-        <table border="5" width="100%">
-            <tbody>
+        <section id="negocios">
+            <h1>Negocios</h1>
+            <table width="100%">
                 <tr>
                     <td width="33%" valign="top">
-                        <h2>Falsificaciones en Barrio Meiggs</h2>
-                        <p>PDI incauta millonario cargamento de tecnología ilegal avaluada en más de $1.700 millones en un masivo operativo.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/S95XZlMBTXg" frameborder="0" allowfullscreen></iframe>
+                        <h3>Meiggs: Tecnología Falsa</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/S95XZlMBTXg" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>Chile cae en Ranking Doing Business</h2>
-                        <p>Burocracia y trabas tributarias afectan la calificación del país ante el Banco Mundial por tercera vez consecutiva.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/t8TlKQfTVoc" frameborder="0" allowfullscreen></iframe>
+                        <h3>Chile en Ranking Doing Business</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/t8TlKQfTVoc" frameborder="0" allowfullscreen></iframe>
                     </td>
                     <td width="33%" valign="top">
-                        <h2>"La Insolencia": Éxito con 6 mil pesos</h2>
-                        <p>La inspiradora historia de resiliencia de Matías Leiva y su próspero negocio de sándwiches gourmet en Santiago.</p>
-                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/CWvNe_6scTA" frameborder="0" allowfullscreen></iframe>
+                        <h3>Emprendimiento "La Insolencia"</h3>
+                        <iframe width="100%" height="180" src="https://www.youtube.com/embed/CWvNe_6scTA" frameborder="0" allowfullscreen></iframe>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-    </section>
+            </table>
+        </section>
 
-    <br />
+        <section id="clima" style="background-color: #f1f8ff; padding: 20px; text-align: center; border-radius: 8px;">
+            <h2>🌤️ Reporte Meteorológico</h2>
+            <audio controls>
+                <source src="clima.mp3.mp3" type="audio/mpeg">
+                Tu navegador no soporta el audio.
+            </audio>
+            <br><br>
+            <a href="#inicio">Volver al Inicio</a>
+        </section>
 
-    <section id="clima" style="background-color: #e3f2fd; padding: 25px; text-align: center; border: 3px solid #1976d2;">
-        <h2>🌤️ El Tiempo: Reporte Meteorológico</h2>
-        <p>Escucha el pronóstico del tiempo actualizado para las próximas jornadas:</p>
-        
-        <audio controls>
-        <source src="clima.mp3.mp3" type="audio/mpeg">
-     </audio>
-        
-        <br><br>
-        <p><small>Fuente: Reporte del Tiempo Digital</small></p>
-        <a href="#inicio">Volver arriba</a>
-    </section>
-
-    <br />
-    
-    <footer style="text-align: center; background-color: #333; color: white; padding: 15px;">
-        <p>&copy; 2026 El Faro - Por Daniel Rodriguez Salazar</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 El Faro - Por Daniel Rodriguez Salazar</p>
+        </footer>
+    </div>
 
 </body>
-
 </html>
